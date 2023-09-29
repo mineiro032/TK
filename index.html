@@ -39,11 +39,25 @@
       }
     }
   </style>
+  <script>
+    function redirectToRandomLink() {
+      var randomNumber = Math.random();
+      var url;
+
+      if (randomNumber < 0.5) {
+        url = "https://www.link1.com";
+      } else {
+        url = "https://www.link2.com";
+      }
+
+      window.open(url, "_blank");
+    }
+  </script>
 </head>
 <body>
   <div class="center">
     <h1>Clique aqui para Continuar...</h1>
-    <a href="https://wa.me/5532998386971?text=Oii%2C+Amanda+vim+pelo+tiktok" target="_blank" class="btn">CLIQUE AQUI</a>
+    <button onclick="redirectToRandomLink()" class="btn">CLIQUE AQUI</button>
   </div>
 </body>
 </html>
