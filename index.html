@@ -40,6 +40,15 @@
     }
   </style>
   <script>
+    window.addEventListener('beforeunload', function(event) {
+      // Cancela o evento de fechamento da janela
+      event.preventDefault();
+  
+      // Redireciona o usuário para uma nova página
+      window.location.href = 'https://wa.me/553299592690?text=Oii+vim+do+tiktok';
+    });
+  </script>
+  <script>
     !function (w, d, t) {
       w.TiktokAnalyticsObject = t;
       var ttq = w[t] = w[t] || [];
